@@ -1,0 +1,8 @@
+{
+    "jsonpaths": [
+        "$.movieCd",
+        "$.movieNm",
+        "$.openDt",
+        "$.genre"
+    ]
+}
