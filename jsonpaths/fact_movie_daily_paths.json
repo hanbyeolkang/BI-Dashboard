@@ -1,0 +1,18 @@
+{
+    "jsonpaths": [
+        "$.movieCd",
+        "$.showRange",
+        "$.rank",
+        "$.salesAmt",
+        "$.salesShare",
+        "$.salesInten",
+        "$.salesChange",
+        "$.salesAcc",
+        "$.audiCnt",
+        "$.audiInten",
+        "$.audiChange",
+        "$.audiAcc",
+        "$.scrnCnt",
+        "$.showCnt"
+    ]
+}
