@@ -2,10 +2,11 @@
 
 SELECT
   EXTRACT(DAY FROM showrange) AS "날짜",
-  dayofweek_order AS dayofweek_order,
-  dayofweek_ko AS dayofweek_ko,
-  max(totalaudicnt) AS "관객수" 
+  CAST(dayofweek_order AS VARCHAR) || '.' || dayofweek_ko AS "요일",
+  MAX(totalaudicnt) AS "관객수"
 FROM adhoc.daily_sum
-GROUP BY EXTRACT(DAY FROM showrange), dayofweek_order, dayofweek_ko
+GROUP BY
+  EXTRACT(DAY FROM showrange),
+  CAST(dayofweek_order AS VARCHAR) || '.' || dayofweek_ko
 ORDER BY "관객수" DESC
-LIMIT 10000;
+LIMIT 10000
