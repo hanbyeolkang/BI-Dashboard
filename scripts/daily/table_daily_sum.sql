@@ -1,4 +1,4 @@
--- 일일 총 매출액, 관객수 테이블 생성 쿼리
+-- 일일 총 매출액, 관객수 테이블
 
 CREATE TABLE adhoc.daily_sum AS
 SELECT 
@@ -18,3 +18,19 @@ SELECT
 FROM raw_data.boxoffice AS b
 GROUP BY b.showrange
 ORDER BY b.showrange;
+
+
+ALTER TABLE adhoc.daily_sum
+ADD COLUMN dayofweek_order INT;
+
+
+UPDATE adhoc.daily_sum
+SET dayofweek_order = CASE dayofweek_ko
+  WHEN '월' THEN 1
+  WHEN '화' THEN 2
+  WHEN '수' THEN 3
+  WHEN '목' THEN 4
+  WHEN '금' THEN 5
+  WHEN '토' THEN 6
+  WHEN '일' THEN 7
+END;
