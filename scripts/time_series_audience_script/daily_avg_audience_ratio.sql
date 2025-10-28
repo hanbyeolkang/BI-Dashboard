@@ -1,4 +1,4 @@
-create table analytics.daily_avg_audience_ratio as
+create table adhoc.daily_avg_audience_ratio as
 WITH daily_data AS (
     SELECT
         b.movieCd,
