@@ -22,7 +22,7 @@ BI-Dashboard/
 │   └── time_series_audience_script/
 │
 ├── superset/                        # Superset 차트 및 대시보드
-│   ├── cum_perform/                 # 영화별 총 관객수, 매출액, 상영일 수, 평균 관객수 등
+│   ├── cum_perform/                 # 영화별 총 관객수, 매출액, 상영일수, 평균관객수 등
 │   ├── daily/                       # 일일 관객수, 매출액, 랭킹
 │   └── time_series_audience/        # 개봉일별/주차별 관객수 차이
 │
