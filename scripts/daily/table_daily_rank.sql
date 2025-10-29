@@ -18,14 +18,3 @@ JOIN (
   ORDER BY sumAudiCnt DESC
   LIMIT 10
 ) AS t ON b.movieCd = t.movieCd
-
-
-ALTER TABLE adhoc.daily_rank    
-ADD COLUMN audiCnt INT;
-
-
-UPDATE adhoc.daily_rank AS r
-SET audicnt = b.audicnt
-FROM raw_data.boxoffice AS b
-WHERE r.showrange = b.showrange
-  AND r.rank = b.rank;
