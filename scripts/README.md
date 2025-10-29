@@ -6,4 +6,4 @@
 
 위 디렉토리 내부의 파일들은 다음을 의미합니다.
 - table_*.sql : adhoc 스키마에 대시보드를 위한 테이블 생성 쿼리
-- chart_*.sql : Superset에서 차트 생성시 사용된 쿼리
+- chart_*.sql : Superset 차트에서 사용된 쿼리
