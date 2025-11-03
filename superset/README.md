@@ -8,3 +8,6 @@
 
 ## 개봉 주차별 추이 변화 
 ![](time_series_audience/dashboard.jpg)
+
+## 장르별 분석
+![](genre/genre_aud.png)

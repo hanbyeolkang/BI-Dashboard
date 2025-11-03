@@ -1,4 +1,3 @@
-
 CREATE TABLE adhoc.genre_audience AS
 SELECT 
     i.genre,
